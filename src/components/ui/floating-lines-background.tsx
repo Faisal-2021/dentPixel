@@ -47,8 +47,8 @@ export function FloatingLinesBackground({
       rotationSpeed: number;
 
       constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
+        this.x = Math.random() * canvas!.width;
+        this.y = Math.random() * canvas!.height;
         this.length = Math.random() * 200 + 50;
         this.angle = Math.random() * Math.PI * 2;
         this.speed = Math.random() * 0.5 + 0.1;
@@ -71,9 +71,9 @@ export function FloatingLinesBackground({
         }
 
         // Wrap around
-        if (this.y < -this.length) this.y = canvas.height + this.length;
-        if (this.x < -this.length) this.x = canvas.width + this.length;
-        if (this.x > canvas.width + this.length) this.x = -this.length;
+        if (this.y < -this.length) this.y = canvas!.height + this.length;
+        if (this.x < -this.length) this.x = canvas!.width + this.length;
+        if (this.x > canvas!.width + this.length) this.x = -this.length;
       }
 
       draw() {
