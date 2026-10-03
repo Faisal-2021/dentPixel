@@ -104,7 +104,7 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   verification: {
-    google: "-lJWWmIl-6KswZSVndEMEPUkStBbS5l8ioUnzJZe10s",
+    google: "Qo5hfapXT2HDIWY9B4j3xwdFrOYRoKy67D66bAXn8M8",
     yandex: "yandex-verification-placeholder",
   },
   // category: "education",
